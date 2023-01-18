@@ -122,17 +122,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Abalone.cpp" />
     <ClCompile Include="Clustering.cpp" />
+    <ClCompile Include="ClusteringBase.cpp" />
+    <ClCompile Include="ClusteringChebyshev.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Abalone.h" />
     <ClInclude Include="Clustering.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="ClusteringBase.h" />
+    <ClInclude Include="ClusteringChebyshev.h" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Clustering.resx">
       <DependentUpon>Clustering.h</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="abalone.data" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
